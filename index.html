@@ -1,91 +1,113 @@
-<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html><html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARAKU LINK HUB</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
+  <title>ARAKU - LINK HUB</title>
+  <script src="https://cdn.tailwindcss.com"></script>  <style>
     body {
-      image-rendering: pixelated;
+      background: #0b0b0f;
+      font-family: monospace;
     }
-  </style>
-</head>
 
-<body class="min-h-screen bg-black text-white font-mono overflow-x-hidden">
+    .pixel-border {
+      border: 3px solid #ef4444;
+    }
+  </style></head><body class="text-white overflow-x-hidden"><!-- BACKGROUND --><div class="fixed inset-0">
+  <div class="absolute top-0 left-0 w-96 h-96 bg-red-500/10 rounded-full blur-2xl"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-red-700/10 rounded-full blur-2xl"></div>
+</div><!-- MAIN --><div class="relative z-10 min-h-screen flex items-center justify-center p-4">  <div class="w-full max-w-4xl grid md:grid-cols-2 gap-6"><!-- LEFT PROFILE -->
+<div class="hidden md:flex items-center justify-center">
+  <div class="bg-zinc-950 pixel-border rounded-2xl p-6 w-[360px]">
 
-  <!-- background grid -->
-  <div class="absolute inset-0 opacity-20">
-    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.06)_1px,transparent_1px)] bg-[size:28px_28px]"></div>
-  </div>
-
-  <!-- glow -->
-  <div class="absolute top-0 left-0 w-72 h-72 bg-pink-500/20 blur-3xl rounded-full"></div>
-  <div class="absolute bottom-0 right-0 w-80 h-80 bg-cyan-500/20 blur-3xl rounded-full"></div>
-
-  <main class="relative z-10 min-h-screen flex items-center justify-center p-4">
-
-    <div class="w-full max-w-md border-4 border-white bg-zinc-950 rounded-3xl overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.15)]">
-
-      <!-- top bar -->
-      <div class="h-3 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400"></div>
-
-      <div class="p-6">
-
-        <!-- avatar -->
-        <div class="flex flex-col items-center text-center mb-6">
-          <div class="w-28 h-28 border-4 border-white rounded-2xl bg-zinc-900 flex items-center justify-center text-5xl">
-            🎴
-          </div>
-
-          <h1 class="text-4xl font-black text-pink-400 mt-4 tracking-widest">
-            ARAKU
-          </h1>
-
-          <p class="text-sm text-zinc-300 mt-2">
-            manga vibe + pixel life + real life bug
-          </p>
-        </div>
-
-        <!-- quest -->
-        <div class="border-2 border-zinc-700 bg-black rounded-2xl p-4 mb-6">
-          <p class="text-cyan-400 text-xs mb-2 tracking-widest">QUEST LOG</p>
-          <p class="text-sm text-zinc-300">▸ bikin manga</p>
-          <p class="text-sm text-zinc-300">▸ survive hidup</p>
-          <p class="text-sm text-zinc-300">▸ cari duit dari gambar</p>
-        </div>
-
-        <!-- links -->
-        <div class="space-y-3">
-
-          <a href="https://tiktok.com" class="block border-2 border-zinc-700 rounded-xl p-4 bg-zinc-900 hover:border-white transition">
-            ▶ TikTok @arakuu
-          </a>
-
-          <a href="https://instagram.com" class="block border-2 border-zinc-700 rounded-xl p-4 bg-zinc-900 hover:border-white transition">
-            ◎ Instagram @arakuu.art
-          </a>
-
-          <a href="https://youtube.com" class="block border-2 border-zinc-700 rounded-xl p-4 bg-zinc-900 hover:border-white transition">
-            ▣ YouTube Araku
-          </a>
-
-          <a href="https://saweria.co" class="block border-2 border-zinc-700 rounded-xl p-4 bg-zinc-900 hover:border-white transition">
-            ♥ Saweria Support
-          </a>
-
-        </div>
-
-        <p class="text-xs text-zinc-500 text-center mt-6">
-          made with overthinking + pixel dreams
-        </p>
-
+    <div class="text-center">
+      <div class="w-36 h-36 mx-auto bg-black pixel-border border-red-500 rounded-xl flex items-center justify-center text-6xl">
+        🎴
       </div>
+
+      <h1 class="text-3xl font-bold text-red-500 mt-4 tracking-widest">
+        ARAKU
+      </h1>
+
+      <p class="text-sm text-zinc-300 mt-2">
+        manga artist • pixel dreamer
+      </p>
     </div>
 
-  </main>
+    <!-- STATUS -->
+    <div class="mt-6 bg-black pixel-border border-red-500 rounded-xl p-4">
+      <p class="text-red-400 text-xs mb-2">STATUS</p>
+      <p class="text-sm">HP: 23%</p>
+      <p class="text-sm">DRAWING: 70%</p>
+      <p class="text-sm">ENERGY: LOW</p>
+      <p class="text-sm">MONEY: MINIMAL</p>
+    </div>
 
-</body>
+    <!-- QUEST -->
+    <div class="mt-4 bg-black pixel-border border-red-500 rounded-xl p-4">
+      <p class="text-red-400 text-xs mb-2">QUEST</p>
+      <p class="text-sm">▸ create manga</p>
+      <p class="text-sm">▸ improve drawing skill</p>
+      <p class="text-sm">▸ earn income from art</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- RIGHT LINKS -->
+<div class="w-full max-w-md mx-auto bg-zinc-950 pixel-border rounded-2xl overflow-hidden">
+
+  <div class="h-2 bg-red-500"></div>
+
+  <div class="p-6">
+
+    <!-- MOBILE HEADER -->
+    <div class="md:hidden text-center mb-6">
+      <div class="w-28 h-28 mx-auto bg-black pixel-border border-red-500 rounded-xl flex items-center justify-center text-5xl">
+        🎴
+      </div>
+
+      <h1 class="text-3xl font-bold text-red-500 mt-3">
+        ARAKU
+      </h1>
+
+      <p class="text-sm text-zinc-400">pixel anime link hub</p>
+    </div>
+
+    <!-- QUEST LOG -->
+    <div class="bg-black pixel-border border-red-500 rounded-xl p-4 mb-5">
+      <p class="text-red-400 text-xs mb-2">QUEST LOG</p>
+      <p class="text-sm">▸ draw manga chapters</p>
+      <p class="text-sm">▸ survive real life</p>
+      <p class="text-sm">▸ grow as artist</p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="space-y-3">
+
+      <a href="https://tiktok.com" class="block bg-black pixel-border border-red-500 p-4 rounded-xl hover:bg-red-500/10 transition">
+        ▶ TikTok @arakuu
+      </a>
+
+      <a href="https://instagram.com" class="block bg-black pixel-border border-red-500 p-4 rounded-xl hover:bg-red-500/10 transition">
+        ◎ Instagram @arakuu.art
+      </a>
+
+      <a href="https://youtube.com" class="block bg-black pixel-border border-red-500 p-4 rounded-xl hover:bg-red-500/10 transition">
+        ▣ YouTube Araku
+      </a>
+
+      <a href="https://saweria.co" class="block bg-black pixel-border border-red-500 p-4 rounded-xl hover:bg-red-500/10 transition">
+        ♥ Saweria Support
+      </a>
+
+    </div>
+
+    <p class="text-xs text-zinc-500 text-center mt-6">
+      simple pixel anime link hub
+    </p>
+
+  </div>
+</div>
+
+  </div></div></body>
 </html>
